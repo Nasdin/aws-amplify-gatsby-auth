@@ -9,12 +9,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install url-loader
         - yarn install
 
     build:
       commands:
-        - npm install url-loader
+        - yard add url-loader
         - yarn run build
   artifacts:
     baseDirectory: public
